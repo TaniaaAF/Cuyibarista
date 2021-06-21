@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Palanquin:wght@200&family=Spinnaker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply absolute top-0 ml-2 mt-2 p-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full;
+}
+
+.bg-modal{
+    @apply w-full h-full bg-black bg-opacity-70 absolute top-0;
+}
+
+.button{
+    @apply rounded-full mb-3 uppercase text-xs font-bold cursor-pointer tracking-wider text-primary flex border-primary border-2 hover:bg-primary hover:text-white transition ease-out duration-500;
+}
+.slide-contenedor{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+/*.miSlider{
+    display: none;
+    transition: 0.5s;
+    max-height: 100vh;
+}*/
+
+.miSlider img{
+    @apply w-full h-full object-cover transition duration-1000;
+}
+
+.direcciones{
+    @apply w-full h-full absolute top-0 flex justify-between items-center text-3xl;
+}
+
+.direcciones a{
+    @apply text-white inline-block p-2 no-underline;
+}
+
+.direcciones a:hover{
+    @apply bg-gray-500 transition duration-500;
+}
+
+.barras{
+   @apply absolute bottom-0 w-full flex justify-center mb-1.5;
+}
+
+.barra{
+    @apply cursor-pointer h-2 w-2.5 m-2 rounded-full bg-white inline-block ml-3;
+}
+
+.active{
+    @apply bg-blue-400;
+}
+
+.fade{
+    animation-name: fade ;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from{opacity: .4;}
+    to{opacity:1}
+}
+
+.btn{
+    @apply rounded-full py-2 px-4 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}
+
+.btnmenu{
+    @apply  py-2 px-4 uppercase font-bold cursor-pointer tracking-wider;
+}
+
+
